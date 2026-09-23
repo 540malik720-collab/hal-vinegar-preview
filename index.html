@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- user-scalable=no отключает pinch-to-zoom по прямой просьбе
+         владельца (WCAG 1.4.4 при этом не соблюдается — сознательный
+         компромисс, не недосмотр). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Цвет системной рамки браузера равен фону страницы. Был #ffffff —
+         на телефоне над тёмным сайтом висела белая полоса. -->
+    <meta name="theme-color" content="#191108" />
+    <meta name="description" content="Хал — коллекция натуральных фруктовых уксусов: яблочный, финиковый, виноградный, гранатовый." />
+
+    <!-- Значок вкладки — та же восьмиконечная звезда «хатим», что и в
+         декоре секций: свой знак вместо пустого листа у ссылки. -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20fill='%23191108'/%3E%3Cpath%20fill='%23DDA855'%20d='M50%2010%20L56.4%2035.1%20L78.6%2021.9%20L65.4%2044.1%20L90%2050%20L65.4%2055.9%20L78.6%2078.1%20L56.4%2064.9%20L50%2090%20L43.6%2064.9%20L21.4%2078.1%20L34.6%2055.9%20L10%2050%20L34.6%2044.1%20L21.4%2021.9%20L43.6%2035.1%20Z'/%3E%3C/svg%3E">
+
+    <!-- Карточка ссылки. Бренд общается через Telegram и WhatsApp — там
+         ссылка разворачивается в карточку, и без этих тегов она была
+         пустой строкой без имени и картинки. -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Хал">
+    <meta property="og:title" content="Хал — натуральный уксус в четырёх частях">
+    <meta property="og:description" content="Четыре фруктовых уксуса: яблочный, финиковый, виноградный, гранатовый.">
+    <meta property="og:url" content="https://uksushal.ru/">
+    <meta property="og:image" content="https://uksushal.ru/assets/hero-poster-v1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Prata — витринная антиква с кириллицей от рождения (Cyreal).
+         Пришла на смену Instrument Serif, у которой кириллицы нет вовсе:
+         весь русский текст молча уезжал в системную Georgia, то есть
+         фирменного шрифта на заголовках фактически не было.
+         Inter Tight — плотный гротеск для текста и мелочи.
+
+         Шрифты служб доставки (Onest/Roboto/Golos Text) здесь больше не
+         запрашиваются: они нужны ровно четырём пунктам в выпадающем списке
+         внутри кассы. Три семейства висели в блокирующей таблице на каждой
+         загрузке ради окна, которое открывают единицы. Теперь их подгружает
+         main.js в момент открытия кассы — вид тот же, первый экран быстрее. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Inter+Tight:wght@300;400;500;600&display=swap">
+    <title>Хал — Natural Vinegars</title>
+    <script type="module" crossorigin src="/hal-vinegar/assets/index-Bvih63kI.js"></script>
+    <link rel="stylesheet" crossorigin href="/hal-vinegar/assets/index-D0qUCsmF.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
